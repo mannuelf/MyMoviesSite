@@ -1,0 +1,35 @@
+﻿@{
+
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Testing Razor Syntax - Part 2</title>
+    <style>
+        body {
+            font-family: Verdana;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        div {
+            border: 1px solid black;
+            width: 50%;
+            margin: 1.2em;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <div>
+            @TwitterGoodies.Search("manidf")
+        </div>
+        <div>
+        @TwitterGoodies.FollowButton("manidf")</div>
+    </form>
+</body>
+</html>
